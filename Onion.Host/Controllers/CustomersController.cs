@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Onion.App.CommandHandelers;
 using Onion.Core.Commands.Customers;
 using Onion.Core.Models.ViewModels;
-using Onion.App.Queries.Customers;
+using Onion.Core.Queries.Customers;
 using Onion.Core.Models.Infrastructure;
 using Onion.Core.Models.Enums;
 

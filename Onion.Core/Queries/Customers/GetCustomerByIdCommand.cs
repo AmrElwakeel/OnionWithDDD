@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Onion.Core.Models.ViewModels;
 
-namespace Onion.App.Queries.Customers
+namespace Onion.Core.Queries.Customers
 {
     public class GetCustomerByIdCommand : IRequest<CustomerVm>
     {

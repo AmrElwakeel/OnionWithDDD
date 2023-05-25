@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using Onion.App.Queries.Customers;
+using Onion.Core.Queries.Customers;
 using Onion.Core.Models.ViewModels;
 using Onion.Core.Repositories.CustomRepositories;
 using Onion.Domain.BusinessDomain;

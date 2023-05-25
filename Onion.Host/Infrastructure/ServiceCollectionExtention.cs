@@ -15,7 +15,7 @@ using Onion.Core.Services.CustomerServices;
 using Onion.App.Services.CustomerServices;
 using Onion.Core.Commands.Customers;
 using Onion.App.CommandHandelers;
-using Onion.App.Queries.Customers;
+using Onion.Core.Queries.Customers;
 using Onion.Core.Models.ViewModels;
 using Onion.App.QueryHandelers;
 using Onion.Core.Models.Infrastructure;
