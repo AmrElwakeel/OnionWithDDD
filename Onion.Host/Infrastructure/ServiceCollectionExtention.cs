@@ -50,7 +50,7 @@ namespace Onion.Host.Infrastructure
             serviceCollection.AddScoped(typeof(ICustomerService), typeof(CustomerService));
         }
 
-        public static void AddHandellers(this IServiceCollection serviceCollection)
+        public static void AddHandlers(this IServiceCollection serviceCollection)
         {
             //serviceCollection.AddScoped<IRequestHandler<CreateCustomerCommand, Guid>, CreateCustomerCommandHandeler>();
             //serviceCollection.AddScoped<IRequestHandler<UpdateCustomerCommand, bool>, UpdateCustomerCommandHandeler>();
