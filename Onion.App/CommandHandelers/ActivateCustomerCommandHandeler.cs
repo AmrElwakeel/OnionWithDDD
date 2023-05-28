@@ -9,12 +9,12 @@ namespace Onion.App.CommandHandelers
     public class ActivateCustomerCommandHandeler : IRequestHandler<ActivateCustomerCommand, bool>
     {
         private readonly ICustomerService _customerService;
-        private readonly IMediator _mediator;
+        private readonly IPublisher _publisher;
 
-        public ActivateCustomerCommandHandeler(ICustomerService customerService, IMediator mediator)
+        public ActivateCustomerCommandHandeler(ICustomerService customerService, IPublisher publisher)
         {
             _customerService = customerService;
-            _mediator = mediator;
+            _publisher = publisher;
         }
         public async Task<bool> Handle(ActivateCustomerCommand request, CancellationToken cancellationToken)
         {
@@ -26,7 +26,7 @@ namespace Onion.App.CommandHandelers
             customer.ActivateCustomer();
 
             await _customerService.EditAsync(customer);
-            await _mediator.Publish(new CustomerActivatedNotification (customer.Id, customer.Name));
+            await _publisher.Publish(new CustomerActivatedNotification (customer.Id, customer.Name));
 
 
             return true;
